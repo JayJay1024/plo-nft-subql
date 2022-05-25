@@ -1,0 +1,29 @@
+{
+  "name": "plo-nft-subql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:JayJay1024/plo-nft-subql.git",
+  "author": "JayJay1024 <lygm1062@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install",
+    "format": "prettier '**/src/**/*.{js,ts}' --write"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.1",
+    "@commitlint/config-conventional": "^17.0.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1",
+    "lint-staged": ">=10",
+    "prettier": "2.6.2"
+  },
+  "lint-staged": {
+    "**/src/**/*.{js,ts}": "prettier --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
